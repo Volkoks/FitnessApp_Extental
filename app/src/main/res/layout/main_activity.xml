@@ -70,7 +70,7 @@
 
     <TextView
         android:id="@+id/main_activity_text_view_main_screen_text"
-        android:layout_width="wrap_content"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="@dimen/margin_start_default"
         android:layout_marginEnd="@dimen/margin_end_default"
@@ -78,6 +78,7 @@
         android:text="@string/why_did_you_exit_your_workout"
         android:textSize="@dimen/text_size_main_text"
         android:textStyle="italic"
+        android:textAlignment="center"
         app:layout_constraintBottom_toBottomOf="@id/main_activity_image_view_background_the_top_screen"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
