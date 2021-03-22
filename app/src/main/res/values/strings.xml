@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">TestForSoftDC</string>
+    <string name="why_did_you_exit_your_workout">Why did you exit your workout?</string>
+    <string name="text_continue">continue</string>
+    <string name="it_s_too_hard_for_me">It`s too hard for me</string>
+    <string name="it_s_not_interesting">It`s not interesting</string>
+</resources>
