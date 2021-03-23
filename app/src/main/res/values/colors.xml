@@ -10,7 +10,8 @@
 
     <color name="gray1">#202846</color>
     <color name="gray2">#171D38</color>
-    <color name="feedback_color">#0A1229</color>
+    <color name="dark_blue">#0A1229</color>
     <color name="main_blue">#284FDD</color>
     <color name="transparent">#00FFFFFF</color>
+
 </resources>
