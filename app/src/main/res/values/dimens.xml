@@ -11,4 +11,5 @@
     <dimen name="text_size_main_text">24sp</dimen>
     <dimen name="corner_radius_btn">10dp</dimen>
     <dimen name="margin_top_default">5dp</dimen>
+    <dimen name="margin_top_image_main_drawing">20dp</dimen>
 </resources>
