@@ -18,145 +18,76 @@
         android:id="@+id/main_activity_button_back_to"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="25dp"
         android:background="@color/transparent"
         app:icon="@drawable/icon_back"
-        app:layout_constraintBottom_toBottomOf="@+id/main_activity_image_view_background_the_top_screen"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.05"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.05" />
+        app:layout_constraintStart_toStartOf="@id/main_activity_image_view_background_the_top_screen"
+        app:layout_constraintTop_toTopOf="@id/main_activity_image_view_background_the_top_screen" />
 
     <androidx.appcompat.widget.AppCompatImageView
         android:id="@+id/main_activity_image_view_main_drawing"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        app:layout_constraintBottom_toBottomOf="@id/main_activity_image_view_background_the_top_screen"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="@id/main_activity_button_back_to"
-        app:layout_constraintVertical_bias="0.35"
-        app:srcCompat="@drawable/main_drawing" />
-
-    <androidx.appcompat.widget.AppCompatImageView
-        android:id="@+id/main_activity_image_view_small_ring"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        app:layout_constraintBottom_toBottomOf="@id/main_activity_image_view_main_drawing"
-        app:layout_constraintEnd_toEndOf="@id/main_activity_image_view_main_drawing"
-        app:layout_constraintStart_toStartOf="@id/main_activity_image_view_main_drawing"
-        app:layout_constraintTop_toTopOf="@id/main_activity_image_view_main_drawing"
-        app:srcCompat="@drawable/ellipse1" />
-
-    <androidx.appcompat.widget.AppCompatImageView
-        android:id="@+id/main_activity_image_view_middle_ring"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        app:layout_constraintBottom_toBottomOf="@id/main_activity_image_view_main_drawing"
-        app:layout_constraintEnd_toEndOf="@id/main_activity_image_view_main_drawing"
-        app:layout_constraintStart_toStartOf="@id/main_activity_image_view_main_drawing"
-        app:layout_constraintTop_toTopOf="@id/main_activity_image_view_main_drawing"
-        app:srcCompat="@drawable/ellipse3" />
-
-    <androidx.appcompat.widget.AppCompatImageView
-        android:id="@+id/main_activity_image_view_big_ring"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        app:layout_constraintBottom_toBottomOf="@id/main_activity_image_view_main_drawing"
-        app:layout_constraintEnd_toEndOf="@id/main_activity_image_view_main_drawing"
-        app:layout_constraintStart_toStartOf="@id/main_activity_image_view_main_drawing"
-        app:layout_constraintTop_toTopOf="@id/main_activity_image_view_main_drawing"
-        app:srcCompat="@drawable/ellipse4" />
+        app:srcCompat="@drawable/group_252" />
 
     <TextView
         android:id="@+id/main_activity_text_view_main_screen_text"
+        style="@style/StyleMainTextView"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginStart="@dimen/margin_start_default"
-        android:layout_marginEnd="@dimen/margin_end_default"
-        android:fontFamily="@font/univiapro_bold"
         android:text="@string/why_did_you_exit_your_workout"
-        android:textSize="@dimen/text_size_main_text"
-        android:textStyle="italic"
-        android:textAlignment="center"
         app:layout_constraintBottom_toBottomOf="@id/main_activity_image_view_background_the_top_screen"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.90" />
+        app:layout_constraintTop_toBottomOf="@id/main_activity_image_view_main_drawing" />
 
     <com.google.android.material.button.MaterialButton
         android:id="@+id/main_activity_button_continue"
+        style="@style/StyleBtn"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginStart="@dimen/margin_start_and_end_btn_continue"
-        android:layout_marginEnd="@dimen/margin_start_and_end_btn_continue"
-        android:layout_marginBottom="@dimen/margin_start_and_end_btn_continue"
-        android:backgroundTint="@color/main_blue"
-        android:fontFamily="@font/univiapro_bold"
-        android:minHeight="@dimen/min_height_btn"
         android:text="@string/text_continue"
-        android:textSize="@dimen/text_size_btn_continue"
-        android:textStyle="italic"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
 
     <com.google.android.material.button.MaterialButton
-        android:id="@+id/main_activity_button_bottom_button"
+        android:id="@+id/main_activity_button_hard_for_me"
+        style="@style/StyleGroupBnt"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginStart="@dimen/margin_start_and_end_group_btn"
-        android:layout_marginEnd="@dimen/margin_start_and_end_group_btn"
-        android:layout_marginBottom="30dp"
-        android:backgroundTint="@color/gray1"
-        android:fontFamily="@font/roboto_regular"
-        android:minHeight="@dimen/min_height_btn"
         android:text="@string/it_s_too_hard_for_me"
-        android:textAllCaps="false"
-        android:textSize="@dimen/text_size_group_btn"
-        android:textStyle="bold"
         app:icon="@drawable/resource323111"
-        app:iconTint="@null"
-        app:layout_constraintBottom_toTopOf="@id/main_activity_button_continue"
+        app:layout_constraintBottom_toTopOf="@+id/main_activity_button_continue"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/main_activity_button_not_interesting" />
 
     <com.google.android.material.button.MaterialButton
-        android:id="@+id/main_activity_button_middle_button"
+        android:id="@+id/main_activity_button_not_interesting"
+        style="@style/StyleGroupBnt"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginStart="@dimen/margin_start_and_end_group_btn"
-        android:layout_marginEnd="@dimen/margin_start_and_end_group_btn"
-        android:layout_marginBottom="@dimen/margin_bottom_btn_group"
-        android:backgroundTint="@color/gray1"
-        android:minHeight="@dimen/min_height_btn"
         android:text="@string/it_s_not_interesting"
-        android:textAllCaps="false"
-        android:textSize="@dimen/text_size_group_btn"
-        android:textStyle="bold"
         app:icon="@drawable/resource22311"
-        app:iconTint="@null"
-        app:layout_constraintBottom_toTopOf="@id/main_activity_button_bottom_button"
+        app:layout_constraintBottom_toTopOf="@+id/main_activity_button_hard_for_me"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/main_activity_button_don_t_time" />
 
     <com.google.android.material.button.MaterialButton
-        android:id="@+id/main_activity_button_top_button"
+        android:id="@+id/main_activity_button_don_t_time"
+        style="@style/StyleGroupBnt.HardBtn"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginStart="@dimen/margin_start_and_end_group_btn"
-        android:layout_marginEnd="@dimen/margin_start_and_end_group_btn"
-        android:layout_marginBottom="@dimen/margin_bottom_btn_group"
-        android:backgroundTint="@color/main_blue"
-        android:minHeight="@dimen/min_height_btn"
-        android:text="@string/it_s_too_hard_for_me"
-        android:textAllCaps="false"
-        android:textSize="@dimen/text_size_group_btn"
-        android:textStyle="bold"
+        android:text="@string/i_don_t_have_time"
         app:icon="@drawable/resource12311"
-        app:iconTint="@null"
-        app:layout_constraintBottom_toTopOf="@id/main_activity_button_middle_button"
+        app:layout_constraintBottom_toTopOf="@+id/main_activity_button_not_interesting"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/main_activity_image_view_background_the_top_screen" />
 </androidx.constraintlayout.widget.ConstraintLayout>
