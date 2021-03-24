@@ -6,7 +6,7 @@
     android:layout_height="match_parent">
 
     <androidx.appcompat.widget.AppCompatImageView
-        android:id="@+id/main_activity_image_view_background_the_top_screen"
+        android:id="@+id/feedback_complete_fr_iv_img_bg_exit_screen"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:scaleType="fitXY"
@@ -15,41 +15,42 @@
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/image_bg_exit_screen" />
 
-    <com.google.android.material.button.MaterialButton
-        android:id="@+id/main_activity_button_back_to"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="15dp"
-        android:layout_marginTop="25dp"
-        android:background="@color/transparent"
-        app:icon="@drawable/icon_back"
-        app:layout_constraintStart_toStartOf="@id/main_activity_image_view_background_the_top_screen"
-        app:layout_constraintTop_toTopOf="@id/main_activity_image_view_background_the_top_screen" />
-
     <androidx.appcompat.widget.AppCompatImageView
-        android:id="@+id/main_activity_image_view_main_drawing"
+        android:id="@+id/feedback_complete_fr_iv_main_drawing"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        app:layout_constraintBottom_toTopOf="@id/main_activity_text_view_main_screen_text"
+        app:layout_constraintBottom_toTopOf="@id/feedback_complete_fr_tv_main_screen_text"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/image_exit_screen" />
+        app:srcCompat="@drawable/resource_image_comlete_image" />
 
     <TextView
-        android:id="@+id/main_activity_text_view_main_screen_text"
+        android:id="@+id/feedback_complete_fr_tv_main_screen_text"
         style="@style/StyleMainTextView"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:text="@string/why_did_you_exit_your_workout"
-        app:layout_constraintBottom_toBottomOf="@id/main_activity_image_view_background_the_top_screen"
+        android:text="@string/workout_complete"
+        app:layout_constraintBottom_toTopOf="@id/feedback_complete_fr_tv_timer"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/main_activity_image_view_main_drawing" />
-
+        app:layout_constraintTop_toBottomOf="@id/feedback_complete_fr_iv_main_drawing" />
 
     <TextView
-        android:id="@+id/main_activity_button_don_t_time"
+        android:id="@+id/feedback_complete_fr_tv_timer"
+        android:layout_width="118dp"
+        android:layout_height="24dp"
+        android:background="@drawable/feedback_complete_bg_timer"
+        android:gravity="center"
+        android:text="@string/duration_00_05_59"
+        android:textSize="@dimen/text_size_timer"
+        app:layout_constraintBottom_toBottomOf="@+id/feedback_complete_fr_iv_img_bg_exit_screen"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/feedback_complete_fr_tv_main_screen_text" />
+
+    <TextView
+        android:id="@+id/feedback_complete_btn_easy"
         android:layout_width="0dp"
         android:layout_height="60dp"
         android:layout_marginHorizontal="60dp"
@@ -57,19 +58,18 @@
         android:foreground="?android:attr/selectableItemBackground"
         android:gravity="center"
         android:padding="15dp"
-        android:text="@string/i_don_t_have_time"
+        android:text="@string/it_was_too_easy"
         android:textSize="18sp"
         android:textStyle="bold"
-        app:drawableStartCompat="@drawable/resource_image_emoji_confused"
-        app:layout_constraintBottom_toTopOf="@+id/main_activity_button_not_interesting"
+        app:drawableStartCompat="@drawable/resource_image_ok"
+        app:layout_constraintBottom_toTopOf="@+id/feedback_complete_btn_great_workout"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/main_activity_image_view_background_the_top_screen"
+        app:layout_constraintTop_toBottomOf="@+id/feedback_complete_fr_iv_img_bg_exit_screen"
         tools:ignore="UnusedAttribute" />
 
-
     <TextView
-        android:id="@+id/main_activity_button_not_interesting"
+        android:id="@+id/feedback_complete_btn_great_workout"
         android:layout_width="0dp"
         android:layout_height="60dp"
         android:layout_marginHorizontal="60dp"
@@ -77,18 +77,18 @@
         android:foreground="?android:attr/selectableItemBackground"
         android:gravity="center"
         android:padding="15dp"
-        android:text="@string/i_don_t_have_time"
+        android:text="@string/great_workout"
         android:textSize="18sp"
         android:textStyle="bold"
-        app:drawableStartCompat="@drawable/resource_image_emoji_sleeping"
-        app:layout_constraintBottom_toTopOf="@+id/main_activity_button_hard_for_me"
+        app:drawableStartCompat="@drawable/resource_image_muscle"
+        app:layout_constraintBottom_toTopOf="@+id/feedback_complete_btn_hard"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/main_activity_button_don_t_time"
+        app:layout_constraintTop_toBottomOf="@+id/feedback_complete_btn_easy"
         tools:ignore="UnusedAttribute" />
 
     <TextView
-        android:id="@+id/main_activity_button_hard_for_me"
+        android:id="@+id/feedback_complete_btn_hard"
         android:layout_width="0dp"
         android:layout_height="60dp"
         android:layout_marginHorizontal="60dp"
@@ -96,19 +96,18 @@
         android:foreground="?android:attr/selectableItemBackground"
         android:gravity="center"
         android:padding="15dp"
-        android:text="@string/i_don_t_have_time"
+        android:text="@string/it_s_too_hard_for_me"
         android:textSize="18sp"
         android:textStyle="bold"
-        app:drawableStartCompat="@drawable/resource_image_emoji_angry"
-        app:layout_constraintBottom_toTopOf="@+id/main_activity_button_continue"
+        app:drawableStartCompat="@drawable/resource_image_dislike"
+        app:layout_constraintBottom_toTopOf="@+id/feedback_complete_btn_continue"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/main_activity_button_not_interesting"
+        app:layout_constraintTop_toBottomOf="@+id/feedback_complete_btn_great_workout"
         tools:ignore="UnusedAttribute" />
 
-
     <TextView
-        android:id="@+id/main_activity_button_continue"
+        android:id="@+id/feedback_complete_btn_continue"
         android:layout_width="0dp"
         android:layout_height="60dp"
         android:layout_margin="16dp"

@@ -5,4 +5,8 @@
     <string name="it_s_too_hard_for_me">It`s too hard for me</string>
     <string name="it_s_not_interesting">It`s not interesting</string>
     <string name="i_don_t_have_time">I don`t have time</string>
+    <string name="workout_complete">Workout Complete!</string>
+    <string name="duration_00_05_59">Duration 00:05:59</string>
+    <string name="it_was_too_easy">It was too easy</string>
+    <string name="great_workout">Great workout!</string>
 </resources>
