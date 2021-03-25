@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/acounts_setting_btn_back_to"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="27dp"
+        android:background="@drawable/icon_left_arrow"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/acounts_setting_tv_name_setting_section"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="23dp"
+        android:fontFamily="@font/univia_pro_italic"
+        android:text="@string/account"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/acounts_setting_btn_back_to"
+        app:layout_constraintStart_toEndOf="@id/acounts_setting_btn_back_to"
+        app:layout_constraintTop_toTopOf="@+id/acounts_setting_btn_back_to" />
+
+    <TextView
+        android:id="@+id/accounts_setting_tv_personal_setting"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="28dp"
+        android:background="@color/gray2"
+        android:drawablePadding="15dp"
+        android:fontFamily="@font/roboto_regular"
+        android:gravity="center_vertical"
+        android:paddingStart="15dp"
+        android:paddingEnd="24sp"
+        android:text="@string/personal_setting"
+        android:textSize="19sp"
+        app:drawableEndCompat="@drawable/icon_right_arrow"
+        app:drawableStartCompat="@drawable/image_personal_setting"
+        app:layout_constraintTop_toBottomOf="@+id/acounts_setting_tv_name_setting_section" />
+
+    <TextView
+        android:id="@+id/accounts_setting_tv_workout_setting"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="1dp"
+        android:background="@color/gray2"
+        android:drawablePadding="15dp"
+        android:fontFamily="@font/roboto_regular"
+        android:gravity="center_vertical"
+        android:paddingStart="15dp"
+        android:paddingEnd="24sp"
+        android:text="@string/workout_setting"
+        android:textSize="19sp"
+        app:drawableEndCompat="@drawable/icon_right_arrow"
+        app:drawableStartCompat="@drawable/image_workout_setting"
+        app:layout_constraintTop_toBottomOf="@+id/accounts_setting_tv_personal_setting" />
+
+    <TextView
+        android:id="@+id/accounts_setting_tv_training_setting"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="1dp"
+        android:background="@color/gray2"
+        android:drawablePadding="15dp"
+        android:fontFamily="@font/roboto_regular"
+        android:gravity="center_vertical"
+        android:paddingStart="15dp"
+        android:paddingEnd="24sp"
+        android:text="@string/training_setting"
+        android:textSize="19sp"
+        app:drawableEndCompat="@drawable/icon_right_arrow"
+        app:drawableStartCompat="@drawable/image_training_setting"
+        app:layout_constraintTop_toBottomOf="@+id/accounts_setting_tv_workout_setting" />
+
+    <TextView
+        android:id="@+id/accounts_setting_tv_subscription_terms"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="15dp"
+        android:background="@color/gray2"
+        android:drawablePadding="15dp"
+        android:fontFamily="@font/roboto_regular"
+        android:gravity="center_vertical"
+        android:paddingStart="15dp"
+        android:paddingEnd="24sp"
+        android:text="@string/training_setting"
+        android:textSize="19sp"
+        app:drawableEndCompat="@drawable/icon_right_arrow"
+        app:drawableStartCompat="@drawable/image_info"
+        app:layout_constraintTop_toBottomOf="@+id/accounts_setting_tv_training_setting" />
+
+    <TextView
+        android:id="@+id/accounts_setting_tv_privacy_policy"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="1dp"
+        android:background="@color/gray2"
+        android:drawablePadding="15dp"
+        android:fontFamily="@font/roboto_regular"
+        android:gravity="center_vertical"
+        android:paddingStart="15dp"
+        android:paddingEnd="24sp"
+        android:text="@string/privacy_polity"
+        android:textSize="19sp"
+        app:drawableEndCompat="@drawable/icon_right_arrow"
+        app:drawableStartCompat="@drawable/image_docs"
+        app:layout_constraintTop_toBottomOf="@+id/accounts_setting_tv_subscription_terms" />
+
+    <TextView
+        android:id="@+id/accounts_setting_tv_terms_conditions"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="1dp"
+        android:background="@color/gray2"
+        android:drawablePadding="15dp"
+        android:fontFamily="@font/roboto_regular"
+        android:gravity="center_vertical"
+        android:paddingStart="15dp"
+        android:paddingEnd="24sp"
+        android:text="@string/terms_conditions"
+        android:textSize="19sp"
+        app:drawableEndCompat="@drawable/icon_right_arrow"
+        app:drawableStartCompat="@drawable/image_training_setting"
+        app:layout_constraintTop_toBottomOf="@+id/accounts_setting_tv_privacy_policy" />
+
+    <TextView
+        android:id="@+id/accounts_setting_tv_version_number"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:gravity="center"
+        android:text="@string/version_1_01_01"
+        android:textSize="18sp"
+        android:textColor="@color/gray3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/accounts_setting_tv_terms_conditions" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

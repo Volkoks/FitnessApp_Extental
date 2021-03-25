@@ -21,4 +21,11 @@
     <string name="_00_22">00:22</string>
     <string name="kettlebell_swing_with_a_change_of_hands">Kettlebell swing with a change of hands</string>
     <string name="rest_time">Rest Time</string>
+    <string name="personal_setting">Personal Setting</string>
+    <string name="account">Account</string>
+    <string name="workout_setting">Workout Setting</string>
+    <string name="training_setting">Training Setting</string>
+    <string name="privacy_polity">Privacy Polity</string>
+    <string name="terms_conditions"><![CDATA[Terms & Conditions]]></string>
+    <string name="version_1_01_01">Version 1.01.01</string>
 </resources>
