@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/item_fitness_workout_category_bg"
+        android:layout_width="@dimen/layout_widht_fitnes_wrkt_cat_bg"
+        android:layout_height="@dimen/layout_height_fitnes_wrkt_cat_bg"
+        android:background="@drawable/image_test_for_item_workout_category"
+        android:foreground="@drawable/gradient_for_item_workout_category"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="UnusedAttribute" />
+
+    <TextView
+        android:id="@+id/item_fitness_workout_category_tv_name_category"
+        android:layout_width="@dimen/layout_widht_fitnes_wrkt_cat_tv_name_cat"
+        android:layout_height="@dimen/layout_height_fitnes_wrkt_cat_tv_name_cat"
+        android:layout_marginStart="@dimen/margin_start_fitnes_wrkt_cat_tv"
+        android:layout_marginBottom="@dimen/margin_bottom_fitnes_wrkt_cat_tv"
+        android:fontFamily="@font/univia_pro_italic"
+        android:gravity="start||bottom"
+        android:text="@string/keep_fit"
+        android:textSize="@dimen/text_size_fitness_wrkt_cat_tv_name_category"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@id/item_fitness_workout_category_tv_number_of_exercises"
+        app:layout_constraintStart_toStartOf="@id/item_fitness_workout_category_bg" />
+
+    <TextView
+        android:id="@+id/item_fitness_workout_category_tv_number_of_exercises"
+        android:layout_width="@dimen/layout_wight_item_fitness_workout_category_tv_number_of_exercises"
+        android:layout_height="@dimen/layout_height_item_fitness_workout_category_tv_number_of_exercises"
+        android:layout_marginStart="@dimen/margin_start_fitnes_wrkt_cat_tv"
+        android:layout_marginBottom="@dimen/margin_bottom_fitnes_wrkt_cat_tv"
+        android:background="@drawable/bg_btn_default"
+        android:fontFamily="@font/roboto_regular"
+        android:gravity="center"
+        android:text="@string/_75_workouts"
+        app:layout_constraintBottom_toBottomOf="@id/item_fitness_workout_category_bg"
+        app:layout_constraintStart_toStartOf="@id/item_fitness_workout_category_bg" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
