@@ -6,7 +6,7 @@
     android:layout_height="match_parent">
 
     <androidx.appcompat.widget.AppCompatImageView
-        android:id="@+id/exercise_time_frgmt_iv_example_exercise"
+        android:id="@+id/exercise_flow_reps_frgmt_iv_example_exercise"
         android:layout_width="match_parent"
         android:layout_height="400dp"
         android:background="@drawable/image_example_exercise"
@@ -16,7 +16,7 @@
 
 
     <TextView
-        android:id="@+id/exercise_time_frgmt_btn_exit"
+        android:id="@+id/exercise_flow_reps_frgmt_btn_exit"
         android:layout_width="19dp"
         android:layout_height="19dp"
         android:layout_marginTop="31dp"
@@ -26,7 +26,7 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
-        android:id="@+id/exercise_time_frgmt_tv_exercise_name"
+        android:id="@+id/exercise_flow_reps_frgmt_tv_exercise_name"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="70dp"
@@ -37,14 +37,14 @@
         android:text="@string/kettlebell_swing_with_a_change_of_hands"
         android:textSize="18sp"
         android:textStyle="normal"
-        app:layout_constraintBottom_toTopOf="@id/exercise_time_frgmt_btn_play"
+        app:layout_constraintBottom_toTopOf="@id/exercise_flow_reps_frgmt_btn_play"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/exercise_time_frgmt_iv_example_exercise"
+        app:layout_constraintTop_toBottomOf="@+id/exercise_flow_reps_frgmt_iv_example_exercise"
         app:layout_constraintVertical_chainStyle="spread" />
 
     <ImageView
-        android:id="@+id/exercise_time_frgmt_btn_play"
+        android:id="@+id/exercise_flow_reps_frgmt_btn_play"
         android:layout_width="60dp"
         android:layout_height="60dp"
         android:background="@drawable/bg_btn_default"
@@ -53,7 +53,7 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/exercise_time_frgmt_tv_exercise_name"
+        app:layout_constraintTop_toBottomOf="@+id/exercise_flow_reps_frgmt_tv_exercise_name"
         tools:ignore="ContentDescription" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

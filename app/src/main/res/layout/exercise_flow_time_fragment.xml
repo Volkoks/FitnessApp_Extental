@@ -6,7 +6,7 @@
     android:layout_height="match_parent">
 
     <androidx.appcompat.widget.AppCompatImageView
-        android:id="@+id/exercise_time_frgmt_iv_example_exercise"
+        android:id="@+id/exercise_flow_time_frgmt_iv_example_exercise"
         android:layout_width="match_parent"
         android:layout_height="400dp"
         android:background="@drawable/image_example_exercise"
@@ -15,7 +15,7 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
-        android:id="@+id/exercise_time_frgmt_tv_lead_time"
+        android:id="@+id/exercise_flow_time_frgmt_tv_lead_time"
         android:layout_width="31dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="15dp"
@@ -25,35 +25,35 @@
         android:text="@string/_01_23"
         android:textSize="12sp"
         android:textStyle="bold"
-        app:layout_constraintEnd_toStartOf="@id/exercise_time_frgmt_btn_exit"
+        app:layout_constraintEnd_toStartOf="@id/exercise_flow_time_frgmt_btn_exit"
         app:layout_constraintHorizontal_chainStyle="spread_inside"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
 
     <TextView
-        android:id="@+id/exercise_time_frgmt_btn_exit"
+        android:id="@+id/exercise_flow_time_frgmt_btn_exit"
         android:layout_width="19dp"
         android:layout_height="19dp"
         android:layout_marginTop="31dp"
         android:layout_marginEnd="22dp"
         android:background="@drawable/icon_cross"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/exercise_time_frgmt_tv_lead_time"
+        app:layout_constraintStart_toEndOf="@+id/exercise_flow_time_frgmt_tv_lead_time"
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
-        android:id="@+id/exercise_time_frgmt_btn_volume"
+        android:id="@+id/exercise_flow_time_frgmt_btn_volume"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginEnd="15dp"
         android:layout_marginBottom="15dp"
         android:background="@drawable/icon_volume_on"
-        app:layout_constraintBottom_toBottomOf="@id/exercise_time_frgmt_iv_example_exercise"
+        app:layout_constraintBottom_toBottomOf="@id/exercise_flow_time_frgmt_iv_example_exercise"
         app:layout_constraintEnd_toEndOf="parent" />
 
     <TextView
-        android:id="@+id/exercise_time_frgmt_tv_timer"
+        android:id="@+id/exercise_flow_time_frgmt_tv_timer"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="87dp"
@@ -66,11 +66,11 @@
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintBottom_toTopOf="@+id/exercise_time_frgmt_tv_exercise_name"
-        app:layout_constraintTop_toBottomOf="@id/exercise_time_frgmt_iv_example_exercise" />
+        app:layout_constraintBottom_toTopOf="@+id/exercise_flow_time_frgmt_tv_exercise_name"
+        app:layout_constraintTop_toBottomOf="@id/exercise_flow_time_frgmt_iv_example_exercise" />
 
     <TextView
-        android:id="@+id/exercise_time_frgmt_tv_exercise_name"
+        android:id="@+id/exercise_flow_time_frgmt_tv_exercise_name"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="@dimen/margin_start_end_exercise_time_tv_exercise_name"
@@ -83,10 +83,10 @@
         android:textStyle="normal"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/exercise_time_frgmt_tv_timer" />
+        app:layout_constraintTop_toBottomOf="@id/exercise_flow_time_frgmt_tv_timer" />
 
     <ImageView
-        android:id="@+id/exercise_time_frgmt_btn_play"
+        android:id="@+id/exercise_flow_time_frgmt_btn_play"
         android:layout_width="60dp"
         android:layout_height="60dp"
         android:layout_marginStart="20dp"
@@ -95,36 +95,36 @@
         android:paddingVertical="19dp"
         android:src="@drawable/icon_play"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/exercise_time_frgmt_btn_right"
-        app:layout_constraintStart_toEndOf="@+id/exercise_time_frgmt_btn_left"
-        app:layout_constraintTop_toBottomOf="@+id/exercise_time_frgmt_tv_exercise_name"
+        app:layout_constraintEnd_toStartOf="@+id/exercise_flow_time_frgmt_btn_right"
+        app:layout_constraintStart_toEndOf="@+id/exercise_flow_time_frgmt_btn_left"
+        app:layout_constraintTop_toBottomOf="@+id/exercise_flow_time_frgmt_tv_exercise_name"
         tools:ignore="ContentDescription" />
 
     <ImageView
-        android:id="@+id/exercise_time_frgmt_btn_left"
+        android:id="@+id/exercise_flow_time_frgmt_btn_left"
         android:layout_width="60dp"
         android:layout_height="60dp"
         android:background="@drawable/bg_btn_gray1"
         android:paddingVertical="19dp"
         android:src="@drawable/icon_left_arrow"
-        app:layout_constraintBottom_toBottomOf="@+id/exercise_time_frgmt_btn_play"
-        app:layout_constraintEnd_toStartOf="@+id/exercise_time_frgmt_btn_play"
+        app:layout_constraintBottom_toBottomOf="@+id/exercise_flow_time_frgmt_btn_play"
+        app:layout_constraintEnd_toStartOf="@+id/exercise_flow_time_frgmt_btn_play"
         app:layout_constraintHorizontal_chainStyle="packed"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/exercise_time_frgmt_btn_play"
+        app:layout_constraintTop_toTopOf="@+id/exercise_flow_time_frgmt_btn_play"
         tools:ignore="ContentDescription" />
 
     <ImageView
-        android:id="@+id/exercise_time_frgmt_btn_right"
+        android:id="@+id/exercise_flow_time_frgmt_btn_right"
         android:layout_width="60dp"
         android:layout_height="60dp"
         android:background="@drawable/bg_btn_gray1"
         android:paddingVertical="19dp"
         android:src="@drawable/icon_right_arrow"
-        app:layout_constraintBottom_toBottomOf="@+id/exercise_time_frgmt_btn_play"
+        app:layout_constraintBottom_toBottomOf="@+id/exercise_flow_time_frgmt_btn_play"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/exercise_time_frgmt_btn_play"
-        app:layout_constraintTop_toTopOf="@+id/exercise_time_frgmt_btn_play"
+        app:layout_constraintStart_toEndOf="@+id/exercise_flow_time_frgmt_btn_play"
+        app:layout_constraintTop_toTopOf="@+id/exercise_flow_time_frgmt_btn_play"
         tools:ignore="ContentDescription" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

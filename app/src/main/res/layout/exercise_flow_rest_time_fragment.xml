@@ -108,13 +108,13 @@
         android:paddingVertical="19dp"
         android:src="@drawable/icon_play"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/exercise_rest_time_frgmt_btn_right"
-        app:layout_constraintStart_toEndOf="@+id/exercise_rest_time_frgmt_btn_left"
+        app:layout_constraintEnd_toStartOf="@+id/exercise_rest_time_frgmt_btn_right_arrow"
+        app:layout_constraintStart_toEndOf="@+id/exercise_rest_time_frgmt_btn_left_arrow"
         app:layout_constraintTop_toBottomOf="@+id/exercise_rest_time_frgmt_tv_timer"
         tools:ignore="ContentDescription" />
 
     <ImageView
-        android:id="@+id/exercise_rest_time_frgmt_btn_left"
+        android:id="@+id/exercise_rest_time_frgmt_btn_left_arrow"
         android:layout_width="60dp"
         android:layout_height="60dp"
         android:background="@drawable/bg_btn_gray1"
@@ -128,7 +128,7 @@
         tools:ignore="ContentDescription" />
 
     <ImageView
-        android:id="@+id/exercise_rest_time_frgmt_btn_right"
+        android:id="@+id/exercise_rest_time_frgmt_btn_right_arrow"
         android:layout_width="60dp"
         android:layout_height="60dp"
         android:background="@drawable/bg_btn_gray1"
