@@ -13,4 +13,20 @@
     <dimen name="margin_top_default">5dp</dimen>
     <dimen name="margin_top_image_main_drawing">20dp</dimen>
     <dimen name="text_size_timer">12sp</dimen>
+    <dimen name="layout_widht_fitnes_wrkt_cat_bg">330dp</dimen>
+    <dimen name="layout_height_fitnes_wrkt_cat_bg">190dp</dimen>
+    <dimen name="layout_widht_fitnes_wrkt_cat_tv_name_cat">183dp</dimen>
+    <dimen name="layout_height_fitnes_wrkt_cat_tv_name_cat">56dp</dimen>
+    <dimen name="margin_start_fitnes_wrkt_cat_tv">15dp</dimen>
+    <dimen name="margin_bottom_fitnes_wrkt_cat_tv">10dp</dimen>
+    <dimen name="text_size_fitness_wrkt_cat_tv_name_category">20sp</dimen>
+    <dimen name="layout_wight_item_fitness_workout_category_tv_number_of_exercises">87dp</dimen>
+    <dimen name="layout_height_item_fitness_workout_category_tv_number_of_exercises">24dp</dimen>
+    <dimen name="layout_widht_item_exercise_card_small_bg">330dp</dimen>
+    <dimen name="layout_height_item_exercise_card_small_bg">78dp</dimen>
+    <dimen name="layout_wight_and_height_item_exercise_card_small_img_exercise">78dp</dimen>
+    <dimen name="layout_height_item_exercise_card_small_tv_name_exercise">18dp</dimen>
+    <dimen name="margin_start_item_exercise_card_small_tv">20dp</dimen>
+    <dimen name="margin_end_item_exercise_cart_tv_exercise_time">173dp</dimen>
+    <dimen name="margin_start_end_exercise_time_tv_exercise_name">15dp</dimen>
 </resources>

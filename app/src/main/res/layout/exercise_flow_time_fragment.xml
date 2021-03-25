@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/exercise_time_frgmt_iv_example_exercise"
+        android:layout_width="match_parent"
+        android:layout_height="400dp"
+        android:background="@drawable/image_example_exercise"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/exercise_time_frgmt_tv_lead_time"
+        android:layout_width="31dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="31dp"
+        android:fontFamily="@font/roboto_regular"
+        android:gravity="center"
+        android:text="@string/_01_23"
+        android:textSize="12sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@id/exercise_time_frgmt_btn_exit"
+        app:layout_constraintHorizontal_chainStyle="spread_inside"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <TextView
+        android:id="@+id/exercise_time_frgmt_btn_exit"
+        android:layout_width="19dp"
+        android:layout_height="19dp"
+        android:layout_marginTop="31dp"
+        android:layout_marginEnd="22dp"
+        android:background="@drawable/icon_cross"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/exercise_time_frgmt_tv_lead_time"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/exercise_time_frgmt_btn_volume"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="15dp"
+        android:layout_marginBottom="15dp"
+        android:background="@drawable/icon_volume_on"
+        app:layout_constraintBottom_toBottomOf="@id/exercise_time_frgmt_iv_example_exercise"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <TextView
+        android:id="@+id/exercise_time_frgmt_tv_timer"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="87dp"
+        android:layout_marginTop="44dp"
+        android:layout_marginEnd="88dp"
+        android:fontFamily="@font/univia_pro_italic"
+        android:gravity="center"
+        android:text="@string/_00_22"
+        android:textSize="60sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/exercise_time_frgmt_iv_example_exercise" />
+
+    <TextView
+        android:id="@+id/exercise_time_frgmt_tv_exercise_name"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/margin_start_end_exercise_time_tv_exercise_name"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="@dimen/margin_start_end_exercise_time_tv_exercise_name"
+        android:fontFamily="@font/roboto_regular"
+        android:gravity="center"
+        android:text="@string/kettlebell_swing_with_a_change_of_hands"
+        android:textSize="18sp"
+        android:textStyle="normal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/exercise_time_frgmt_tv_timer" />
+
+    <TextView
+        android:id="@+id/exercise_time_frgmt_btn_play"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:background="@drawable/bg_btn_default"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/exercise_time_frgmt_tv_exercise_name" />
+
+    <TextView
+        android:id="@+id/exercise_time_frgmt_btn_left"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:background="@drawable/bg_btn_gray1"
+        app:layout_constraintBottom_toBottomOf="@+id/exercise_time_frgmt_btn_play"
+        app:layout_constraintEnd_toStartOf="@+id/exercise_time_frgmt_btn_play"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/exercise_time_frgmt_btn_play" />
+
+    <TextView
+        android:id="@+id/exercise_time_frgmt_btn_right"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:background="@drawable/bg_btn_gray1"
+        app:layout_constraintBottom_toBottomOf="@+id/exercise_time_frgmt_btn_play"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/exercise_time_frgmt_btn_play"
+        app:layout_constraintTop_toTopOf="@+id/exercise_time_frgmt_btn_play" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
