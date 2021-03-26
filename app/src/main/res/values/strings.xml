@@ -28,4 +28,8 @@
     <string name="privacy_polity">Privacy Polity</string>
     <string name="terms_conditions"><![CDATA[Terms & Conditions]]></string>
     <string name="version_1_01_01">Version 1.01.01</string>
+    <string name="plan">Plan</string>
+    <string name="exercise">Exercise</string>
+    <string name="workouts">Workouts</string>
+    <string name="diets">Diets</string>
 </resources>

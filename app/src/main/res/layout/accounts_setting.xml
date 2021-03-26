@@ -136,10 +136,23 @@
         android:layout_marginTop="25dp"
         android:gravity="center"
         android:text="@string/version_1_01_01"
-        android:textSize="18sp"
         android:textColor="@color/gray3"
+        android:textSize="18sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/accounts_setting_tv_terms_conditions" />
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/accounts_setting_bn_panel_navigation"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:background="@color/gray1"
+        app:labelVisibilityMode="labeled"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:menu="@menu/menu_account_setting_nav"
+        app:itemIconTint="@color/bg_text_and_icon_account_setting"
+        app:itemTextColor="@color/bg_text_and_icon_account_setting" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

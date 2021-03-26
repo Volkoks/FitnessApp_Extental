@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/menu_account_setting_nav_btn_plan"
+        android:icon="@drawable/icon_calendar"
+        android:title="@string/plan" />
+    <item
+        android:id="@+id/menu_account_setting_nav_btn_exercise"
+        android:icon="@drawable/icon_muscle"
+        android:title="@string/exercise" />
+    <item
+        android:id="@+id/menu_account_setting_nav_btn_workouts"
+        android:icon="@drawable/icon_clock"
+        android:title="@string/workouts" />
+    <item
+        android:id="@+id/menu_account_setting_nav_btn_diets"
+        android:icon="@drawable/icon_food"
+        android:title="@string/diets" />
+    <item
+        android:id="@+id/menu_account_setting_nav_btn_accounts"
+        android:icon="@drawable/image_personal_setting"
+        android:title="@string/diets" />
+
+
+</menu>

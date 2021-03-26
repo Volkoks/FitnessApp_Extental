@@ -25,4 +25,5 @@
         <item name="android:textStyle">italic</item>
         <item name="android:layout_marginTop">@dimen/margin_top_default</item>
     </style>
+
 </resources>
