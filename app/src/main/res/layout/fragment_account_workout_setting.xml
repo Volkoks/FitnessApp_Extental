@@ -1,0 +1,305 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/accounts_workout_setting_btn_back_to"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="27dp"
+        android:background="@drawable/icon_left_arrow"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/accounts_workout_setting_tv_name_setting_section"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="23dp"
+        android:fontFamily="@font/univia_pro_italic"
+        android:text="@string/workout_setting"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/accounts_workout_setting_btn_back_to"
+        app:layout_constraintStart_toEndOf="@+id/accounts_workout_setting_btn_back_to"
+        app:layout_constraintTop_toTopOf="@+id/accounts_workout_setting_btn_back_to" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/accounts_workout_setting_btn_training_goal"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="28dp"
+        android:background="@color/gray1"
+        android:foreground="?attr/selectableItemBackground"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/accounts_workout_setting_tv_name_setting_section"
+        tools:ignore="UnusedAttribute">
+
+        <TextView
+            android:id="@+id/accounts_workout_setting_tv_text_training_goal"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/margin_start_default"
+            android:gravity="start"
+            android:text="@string/training_goal"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/accounts_workout_setting_tv_meaning_training_goal_in_btn"
+            app:layout_constraintHorizontal_chainStyle="spread"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/accounts_workout_setting_tv_meaning_training_goal_in_btn"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="23dp"
+            android:drawableEnd="@drawable/icon_right_arrow"
+            android:drawablePadding="15dp"
+            android:gravity="end"
+            android:text="@string/weight_loss"
+            android:textSize="18sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/accounts_workout_setting_tv_text_training_goal"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:ignore="UseCompatTextViewDrawableXml" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/accounts_workout_setting_btn_fitness_level"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="1dp"
+        android:background="@color/gray1"
+        android:foreground="?attr/selectableItemBackground"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/accounts_workout_setting_btn_training_goal"
+        tools:ignore="UnusedAttribute">
+
+        <TextView
+            android:id="@+id/accounts_workout_setting_tv_text_fitness_level"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/margin_start_default"
+            android:gravity="start"
+            android:text="@string/fitness_level"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/accounts_workout_setting_tv_meaning_fitness_level_in_btn"
+            app:layout_constraintHorizontal_chainStyle="spread"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/accounts_workout_setting_tv_meaning_fitness_level_in_btn"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="23dp"
+            android:drawableEnd="@drawable/icon_right_arrow"
+            android:drawablePadding="15dp"
+            android:gravity="end"
+            android:text="@string/middle"
+            android:textSize="18sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/accounts_workout_setting_tv_text_fitness_level"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:ignore="UseCompatTextViewDrawableXml" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/accounts_workout_setting_btn_desired_weight"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="1dp"
+        android:background="@color/gray1"
+        android:foreground="?attr/selectableItemBackground"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/accounts_workout_setting_btn_fitness_level"
+        tools:ignore="UnusedAttribute">
+
+        <TextView
+            android:id="@+id/accounts_workout_setting_tv_text_desired_weight"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/margin_start_default"
+            android:gravity="start"
+            android:text="@string/desired_weight"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/accounts_workout_setting_tv_meaning_desired_weight_in_btn"
+            app:layout_constraintHorizontal_chainStyle="spread"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/accounts_workout_setting_tv_meaning_desired_weight_in_btn"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="23dp"
+            android:drawableEnd="@drawable/icon_right_arrow"
+            android:drawablePadding="15dp"
+            android:gravity="end"
+            android:text="@string/_78_5_kg"
+            android:textSize="18sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/accounts_workout_setting_tv_text_desired_weight"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:ignore="UseCompatTextViewDrawableXml" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/accounts_workout_setting_btn_training_location"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="1dp"
+        android:background="@color/gray1"
+        android:foreground="?attr/selectableItemBackground"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/accounts_workout_setting_btn_desired_weight"
+        tools:ignore="UnusedAttribute">
+
+        <TextView
+            android:id="@+id/accounts_workout_setting_tv_text_training_location"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/margin_start_default"
+            android:gravity="start"
+            android:text="@string/training_location"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/accounts_workout_setting_tv_meaning_training_location_in_btn"
+            app:layout_constraintHorizontal_chainStyle="spread"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/accounts_workout_setting_tv_meaning_training_location_in_btn"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="23dp"
+            android:drawableEnd="@drawable/icon_right_arrow"
+            android:drawablePadding="15dp"
+            android:gravity="end"
+            android:text="@string/in_gym"
+            android:textSize="18sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/accounts_workout_setting_tv_text_training_location"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:ignore="UseCompatTextViewDrawableXml" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/accounts_workout_setting_btn_activity_level"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="1dp"
+        android:background="@color/gray1"
+        android:foreground="?attr/selectableItemBackground"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/accounts_workout_setting_btn_training_location"
+        tools:ignore="UnusedAttribute">
+
+        <TextView
+            android:id="@+id/accounts_workout_setting_tv_text_activity_level"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/margin_start_default"
+            android:gravity="start"
+            android:text="@string/activity_level"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/accounts_workout_setting_tv_meaning_activity_level_in_btn"
+            app:layout_constraintHorizontal_chainStyle="spread"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/accounts_workout_setting_tv_meaning_activity_level_in_btn"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="23dp"
+            android:drawableEnd="@drawable/icon_right_arrow"
+            android:drawablePadding="15dp"
+            android:gravity="end"
+            android:text="@string/average_activity"
+            android:textSize="18sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/accounts_workout_setting_tv_text_activity_level"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:ignore="UseCompatTextViewDrawableXml" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/accounts_workout_setting_btn_training_zone"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="1dp"
+        android:background="@color/gray1"
+        android:foreground="?attr/selectableItemBackground"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/accounts_workout_setting_btn_activity_level"
+        tools:ignore="UnusedAttribute">
+
+        <TextView
+            android:id="@+id/accounts_workout_setting_tv_text_training_zone"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/margin_start_default"
+            android:gravity="start"
+            android:text="@string/training_zone"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/accounts_workout_setting_tv_meaning_training_zone_in_btn"
+            app:layout_constraintHorizontal_chainStyle="spread"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/accounts_workout_setting_tv_meaning_training_zone_in_btn"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="23dp"
+            android:drawableEnd="@drawable/icon_right_arrow"
+            android:drawablePadding="15dp"
+            android:gravity="end"
+            android:text="@string/arms_chest"
+            android:textSize="18sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/accounts_workout_setting_tv_text_training_zone"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:ignore="UseCompatTextViewDrawableXml" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
