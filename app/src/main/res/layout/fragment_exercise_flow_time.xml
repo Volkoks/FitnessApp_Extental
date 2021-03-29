@@ -38,9 +38,11 @@
         android:layout_marginTop="31dp"
         android:layout_marginEnd="22dp"
         android:background="@drawable/icon_cross"
+        android:foreground="?attr/selectableItemBackground"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/exercise_flow_time_frgmt_tv_lead_time"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="UnusedAttribute" />
 
     <TextView
         android:id="@+id/exercise_flow_time_frgmt_btn_volume"
@@ -49,8 +51,10 @@
         android:layout_marginEnd="15dp"
         android:layout_marginBottom="15dp"
         android:background="@drawable/icon_volume_on"
+        android:foreground="?attr/selectableItemBackground"
         app:layout_constraintBottom_toBottomOf="@id/exercise_flow_time_frgmt_iv_example_exercise"
-        app:layout_constraintEnd_toEndOf="parent" />
+        app:layout_constraintEnd_toEndOf="parent"
+        tools:ignore="UnusedAttribute" />
 
     <TextView
         android:id="@+id/exercise_flow_time_frgmt_tv_timer"
@@ -92,19 +96,21 @@
         android:layout_marginStart="20dp"
         android:layout_marginEnd="20dp"
         android:background="@drawable/bg_btn_default"
+        android:foreground="?attr/selectableItemBackground"
         android:paddingVertical="19dp"
         android:src="@drawable/icon_play"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toStartOf="@+id/exercise_flow_time_frgmt_btn_right"
         app:layout_constraintStart_toEndOf="@+id/exercise_flow_time_frgmt_btn_left"
         app:layout_constraintTop_toBottomOf="@+id/exercise_flow_time_frgmt_tv_exercise_name"
-        tools:ignore="ContentDescription" />
+        tools:ignore="ContentDescription,UnusedAttribute" />
 
     <ImageView
         android:id="@+id/exercise_flow_time_frgmt_btn_left"
         android:layout_width="60dp"
         android:layout_height="60dp"
         android:background="@drawable/bg_btn_gray1"
+        android:foreground="?attr/selectableItemBackground"
         android:paddingVertical="19dp"
         android:src="@drawable/icon_left_arrow"
         app:layout_constraintBottom_toBottomOf="@+id/exercise_flow_time_frgmt_btn_play"
@@ -112,19 +118,20 @@
         app:layout_constraintHorizontal_chainStyle="packed"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="@+id/exercise_flow_time_frgmt_btn_play"
-        tools:ignore="ContentDescription" />
+        tools:ignore="ContentDescription,UnusedAttribute" />
 
     <ImageView
         android:id="@+id/exercise_flow_time_frgmt_btn_right"
         android:layout_width="60dp"
         android:layout_height="60dp"
         android:background="@drawable/bg_btn_gray1"
+        android:foreground="?attr/selectableItemBackground"
         android:paddingVertical="19dp"
         android:src="@drawable/icon_right_arrow"
         app:layout_constraintBottom_toBottomOf="@+id/exercise_flow_time_frgmt_btn_play"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/exercise_flow_time_frgmt_btn_play"
         app:layout_constraintTop_toTopOf="@+id/exercise_flow_time_frgmt_btn_play"
-        tools:ignore="ContentDescription" />
+        tools:ignore="ContentDescription,UnusedAttribute" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

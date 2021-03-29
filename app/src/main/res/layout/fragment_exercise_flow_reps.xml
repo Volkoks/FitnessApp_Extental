@@ -48,12 +48,13 @@
         android:layout_width="60dp"
         android:layout_height="60dp"
         android:background="@drawable/bg_btn_default"
+        android:foreground="?attr/selectableItemBackground"
         android:paddingVertical="19dp"
         android:src="@drawable/icon_play"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/exercise_flow_reps_frgmt_tv_exercise_name"
-        tools:ignore="ContentDescription" />
+        tools:ignore="ContentDescription,UnusedAttribute" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

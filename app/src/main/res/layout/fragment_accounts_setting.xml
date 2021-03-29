@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
@@ -33,6 +34,7 @@
         android:layout_height="50dp"
         android:layout_marginTop="28dp"
         android:background="@color/gray2"
+        android:foreground="?attr/selectableItemBackground"
         android:drawablePadding="15dp"
         android:fontFamily="@font/roboto_regular"
         android:gravity="center_vertical"
@@ -42,7 +44,8 @@
         android:textSize="19sp"
         app:drawableEndCompat="@drawable/icon_right_arrow"
         app:drawableStartCompat="@drawable/image_personal_setting"
-        app:layout_constraintTop_toBottomOf="@+id/acounts_setting_tv_name_setting_section" />
+        app:layout_constraintTop_toBottomOf="@+id/acounts_setting_tv_name_setting_section"
+        tools:ignore="UnusedAttribute" />
 
     <TextView
         android:id="@+id/accounts_setting_tv_workout_setting"
@@ -50,6 +53,7 @@
         android:layout_height="50dp"
         android:layout_marginTop="1dp"
         android:background="@color/gray2"
+        android:foreground="?attr/selectableItemBackground"
         android:drawablePadding="15dp"
         android:fontFamily="@font/roboto_regular"
         android:gravity="center_vertical"
@@ -59,7 +63,8 @@
         android:textSize="19sp"
         app:drawableEndCompat="@drawable/icon_right_arrow"
         app:drawableStartCompat="@drawable/image_workout_setting"
-        app:layout_constraintTop_toBottomOf="@+id/accounts_setting_tv_personal_setting" />
+        app:layout_constraintTop_toBottomOf="@+id/accounts_setting_tv_personal_setting"
+        tools:ignore="UnusedAttribute" />
 
     <TextView
         android:id="@+id/accounts_setting_tv_training_setting"
@@ -67,6 +72,7 @@
         android:layout_height="50dp"
         android:layout_marginTop="1dp"
         android:background="@color/gray2"
+        android:foreground="?attr/selectableItemBackground"
         android:drawablePadding="15dp"
         android:fontFamily="@font/roboto_regular"
         android:gravity="center_vertical"
@@ -76,7 +82,8 @@
         android:textSize="19sp"
         app:drawableEndCompat="@drawable/icon_right_arrow"
         app:drawableStartCompat="@drawable/image_training_setting"
-        app:layout_constraintTop_toBottomOf="@+id/accounts_setting_tv_workout_setting" />
+        app:layout_constraintTop_toBottomOf="@+id/accounts_setting_tv_workout_setting"
+        tools:ignore="UnusedAttribute" />
 
     <TextView
         android:id="@+id/accounts_setting_tv_subscription_terms"
@@ -84,6 +91,7 @@
         android:layout_height="50dp"
         android:layout_marginTop="15dp"
         android:background="@color/gray2"
+        android:foreground="?attr/selectableItemBackground"
         android:drawablePadding="15dp"
         android:fontFamily="@font/roboto_regular"
         android:gravity="center_vertical"
@@ -93,7 +101,8 @@
         android:textSize="19sp"
         app:drawableEndCompat="@drawable/icon_right_arrow"
         app:drawableStartCompat="@drawable/image_info"
-        app:layout_constraintTop_toBottomOf="@+id/accounts_setting_tv_training_setting" />
+        app:layout_constraintTop_toBottomOf="@+id/accounts_setting_tv_training_setting"
+        tools:ignore="UnusedAttribute" />
 
     <TextView
         android:id="@+id/accounts_setting_tv_privacy_policy"
@@ -101,6 +110,7 @@
         android:layout_height="50dp"
         android:layout_marginTop="1dp"
         android:background="@color/gray2"
+        android:foreground="?attr/selectableItemBackground"
         android:drawablePadding="15dp"
         android:fontFamily="@font/roboto_regular"
         android:gravity="center_vertical"
@@ -110,7 +120,8 @@
         android:textSize="19sp"
         app:drawableEndCompat="@drawable/icon_right_arrow"
         app:drawableStartCompat="@drawable/image_docs"
-        app:layout_constraintTop_toBottomOf="@+id/accounts_setting_tv_subscription_terms" />
+        app:layout_constraintTop_toBottomOf="@+id/accounts_setting_tv_subscription_terms"
+        tools:ignore="UnusedAttribute" />
 
     <TextView
         android:id="@+id/accounts_setting_tv_terms_conditions"
@@ -118,6 +129,7 @@
         android:layout_height="50dp"
         android:layout_marginTop="1dp"
         android:background="@color/gray2"
+        android:foreground="?attr/selectableItemBackground"
         android:drawablePadding="15dp"
         android:fontFamily="@font/roboto_regular"
         android:gravity="center_vertical"
@@ -127,7 +139,8 @@
         android:textSize="19sp"
         app:drawableEndCompat="@drawable/icon_right_arrow"
         app:drawableStartCompat="@drawable/image_training_setting"
-        app:layout_constraintTop_toBottomOf="@+id/accounts_setting_tv_privacy_policy" />
+        app:layout_constraintTop_toBottomOf="@+id/accounts_setting_tv_privacy_policy"
+        tools:ignore="UnusedAttribute" />
 
     <TextView
         android:id="@+id/accounts_setting_tv_version_number"
